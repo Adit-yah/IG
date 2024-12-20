@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'helvetica now display';
+}
+
+.card{
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.card .stories{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    white-space: nowrap;
+    overflow:auto ;
+    overflow-y: hidden;
+
+}
+
+.stories::-webkit-scrollbar{
+    display: none;
+}
+
+.story {
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    background: linear-gradient(to right bottom , #ff3b9d,#03A9F4, #32CD32,#FFC67D);
+    border-radius: 50%;
+    padding: 3px;
+    display: inline-block;
+    /* margin-right: ; */
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
